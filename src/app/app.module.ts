@@ -19,7 +19,6 @@ const routesConfig: Routes = [
 
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [
     AppComponent
