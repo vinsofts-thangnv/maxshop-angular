@@ -7,24 +7,22 @@ import { Routes, RouterModule } from '@angular/router';
 const routesConfig: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
+  { path: 'home1', loadChildren: './pages/home1/home1.module#Home1Module' },
+  { path: 'cart', loadChildren: './pages/cart/cart.module#CartModule' },
+  { path: 'checkout', loadChildren: './pages/checkout/checkout.module#CheckoutModule' },
   { path: 'shop', loadChildren: './pages/shop/shop.module#ShopModule' },
-
+  { path: 'shop1', loadChildren: './pages/shop1/shop1.module#Shop1Module' },
+  { path: 'blog', loadChildren: './pages/blog/blog.module#BlogModule' },
+  { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
+  { path: 'contact', loadChildren: './pages/contact/contact.module#ContactModule' },
 ];
 
 import { AppComponent } from './app.component';
-import { Shop1Component } from './pages/shop1/shop1.component';
-import { CartComponent } from './pages/cart/cart.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Shop1Component,
-    CartComponent,
-    ContactComponent,
-    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

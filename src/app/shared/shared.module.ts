@@ -11,7 +11,7 @@ import { CategoryComponent } from '../blocks/category/category.component';
 import { CollectionComponent } from '../blocks/collection/collection.component';
 import { DealingComponent } from '../blocks/dealing/dealing.component';
 import { TestimonialComponent } from '../blocks/testimonial/testimonial.component';
-import { BlogComponent } from '../blocks/blog/blog.component';
+import { BlogHomeComponent } from '../blocks/bloghome/bloghome.component';
 import { SellingComponent } from '../blocks/selling/selling.component';
 import { ClientsComponent } from '../blocks/clients/clients.component';
 import { BannerComponent } from '../blocks/banner/banner.component';
@@ -39,7 +39,7 @@ import { Slider1Component } from '../blocks/slider1/slider1.component';
     CollectionComponent,
     DealingComponent,
     TestimonialComponent,
-    BlogComponent,
+    BlogHomeComponent,
     SellingComponent,
     ClientsComponent,
     BannerComponent,
@@ -60,7 +60,7 @@ import { Slider1Component } from '../blocks/slider1/slider1.component';
     CollectionComponent,
     DealingComponent,
     TestimonialComponent,
-    BlogComponent,
+    BlogHomeComponent,
     SellingComponent,
     ClientsComponent,
     BannerComponent,
