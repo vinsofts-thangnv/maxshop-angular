@@ -21,6 +21,7 @@ import { ProductGirdComponent } from '../blocks/product-gird/product-gird.compon
 import { Product1Component } from '../blocks/product1/product1.component';
 import { ProductComponent } from '../blocks/product/product.component';
 import { Slider1Component } from '../blocks/slider1/slider1.component';
+import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { Slider1Component } from '../blocks/slider1/slider1.component';
     ProductGirdComponent,
     Product1Component,
     ProductComponent,
-    Slider1Component
+    Slider1Component,
+    CheckoutmComponent,
   ],
   exports: [
     HeaderComponent,
@@ -68,7 +70,8 @@ import { Slider1Component } from '../blocks/slider1/slider1.component';
     ProductGirdComponent,
     Product1Component,
     ProductComponent,
-    Slider1Component
+    Slider1Component,
+    CheckoutmComponent
   ]
 })
 export class SharedModule { }
