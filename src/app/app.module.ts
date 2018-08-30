@@ -12,11 +12,19 @@ const routesConfig: Routes = [
 ];
 
 import { AppComponent } from './app.component';
+import { Shop1Component } from './pages/shop1/shop1.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    Shop1Component,
+    CartComponent,
+    ContactComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
