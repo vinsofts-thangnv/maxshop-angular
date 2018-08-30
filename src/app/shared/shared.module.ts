@@ -33,7 +33,6 @@ import { Category1Component } from '../blocks/category1/category1.component';
 import { Dealing1Component } from '../blocks/dealing1/dealing1.component';
 import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.component';
 import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
-import { BlogpostComponent } from '../pages/blogpost/blogpost.component';
 
 @NgModule({
   imports: [
@@ -71,7 +70,6 @@ import { BlogpostComponent } from '../pages/blogpost/blogpost.component';
     Dealing1Component,
     Testimonial1Component,
     CheckoutmComponent,
-    BlogpostComponent
   ],
   exports: [
     HeaderComponent,
@@ -104,7 +102,6 @@ import { BlogpostComponent } from '../pages/blogpost/blogpost.component';
     Dealing1Component,
     Testimonial1Component,
     CheckoutmComponent,
-    BlogpostComponent
   ]
 })
 export class SharedModule { }
