@@ -10,7 +10,7 @@ export class BannerComponent implements OnInit {
 
   page = '';
   constructor(private router: Router) {
-    this.page = this.router.url;
+    this.page = this.router.url.substring(1, this.router.url.length);
   }
 
   ngOnInit() {

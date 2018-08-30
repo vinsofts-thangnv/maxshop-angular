@@ -7,7 +7,7 @@ import { SharedModule } from '../../shared/shared.module';
 
 const routesConfig: Routes = [
   { path: '', component: BlogpostComponent }
-]
+];
 @NgModule({
   imports: [
     CommonModule,
