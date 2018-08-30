@@ -13,8 +13,9 @@ const routesConfig: Routes = [
   { path: 'shop', loadChildren: './pages/shop/shop.module#ShopModule' },
   { path: 'shop1', loadChildren: './pages/shop1/shop1.module#Shop1Module' },
   { path: 'blog', loadChildren: './pages/blog/blog.module#BlogModule' },
-  { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
-  { path: 'contact', loadChildren: './pages/contact/contact.module#ContactModule' },
+  { path: 'blogpost', loadChildren: './pages/contact/contact.module#ContactModule' },
+  { path: 'about', loadChildren: './pages/blogpost/blogpost.module#BlogpostModule' },
+  { path: 'contact', loadChildren: './pages/contact/contact.module#ContasctModule' },
 ];
 
 import { AppComponent } from './app.component';
