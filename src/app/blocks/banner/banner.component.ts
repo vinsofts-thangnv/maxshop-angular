@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  page = '';
+  constructor(private router: Router) {
+    this.page = this.router.url.substring(1, this.router.url.length);
+  }
 
   ngOnInit() {
   }

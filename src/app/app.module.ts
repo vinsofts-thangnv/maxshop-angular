@@ -14,15 +14,15 @@ const routesConfig: Routes = [
   { path: 'shop', loadChildren: './pages/shop/shop.module#ShopModule' },
   { path: 'shop1', loadChildren: './pages/shop1/shop1.module#Shop1Module' },
   { path: 'blog', loadChildren: './pages/blog/blog.module#BlogModule' },
+  { path: 'blogpost', loadChildren: './pages/blogpost/blogpost.module#BlogpostModule' },
   { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
   { path: 'contact', loadChildren: './pages/contact/contact.module#ContactModule' },
 ];
 
 import { AppComponent } from './app.component';
-
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
