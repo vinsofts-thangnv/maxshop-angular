@@ -12,12 +12,12 @@ export class HeaderComponent implements OnInit {
   style_header = '';
   style_top_header = '';
   constructor(private router: Router) {
-    if (this.router.url === '/shop' || this.router.url === '/home1') {
-      this.style_header = 'header-section header-section-1 container-fluid no-padding';
-      this.style_top_header = 'top-header top-header1 container-fluid no-padding';
-    } else {
+    if (this.router.url === '/home') {
       this.style_header = 'header-section container-fluid no-padding';
       this.style_top_header = 'top-header container-fluid no-padding';
+    } else {
+      this.style_header = 'header-section header-section-1 container-fluid no-padding';
+      this.style_top_header = 'top-header top-header1 container-fluid no-padding';
     }
   }
   ngOnInit() {
