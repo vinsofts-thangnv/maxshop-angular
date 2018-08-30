@@ -12,13 +12,13 @@ export class FooterComponent implements OnInit {
   ngif_footer = true;
   number_col = 0;
   constructor(private router: Router) {
-    if (this.router.url === '/shop' || this.router.url === '/home1') {
+    if (this.router.url === '/home') {
+      this.style_footer = 'footer-main container-fluid';
+      this.ngif_footer = true;
+    } else {
       this.style_footer = 'footer-main footer-main-1 services-section container-fluid';
       this.ngif_footer = false;
       this.number_col = 1;
-    } else {
-      this.style_footer = 'footer-main container-fluid';
-      this.ngif_footer = true;
     }
   }
 
