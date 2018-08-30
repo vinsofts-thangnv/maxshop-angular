@@ -21,14 +21,11 @@ import { ProductGirdComponent } from '../blocks/product-gird/product-gird.compon
 import { Product1Component } from '../blocks/product1/product1.component';
 import { ProductComponent } from '../blocks/product/product.component';
 import { Slider1Component } from '../blocks/slider1/slider1.component';
-<<<<<<< HEAD
-import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
-=======
 import { Category1Component } from '../blocks/category1/category1.component';
 import { Dealing1Component } from '../blocks/dealing1/dealing1.component';
 import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.component';
+import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
 
->>>>>>> b943d70b821d05a5ac8df7ce430e8692440da09c
 
 
 @NgModule({
@@ -56,13 +53,10 @@ import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.compo
     Product1Component,
     ProductComponent,
     Slider1Component,
-<<<<<<< HEAD
-    CheckoutmComponent,
-=======
     Category1Component,
     Dealing1Component,
-    Testimonial1Component
->>>>>>> b943d70b821d05a5ac8df7ce430e8692440da09c
+    Testimonial1Component,
+    CheckoutmComponent
   ],
   exports: [
     HeaderComponent,
@@ -84,13 +78,10 @@ import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.compo
     Product1Component,
     ProductComponent,
     Slider1Component,
-<<<<<<< HEAD
-    CheckoutmComponent
-=======
     Category1Component,
     Dealing1Component,
-    Testimonial1Component
->>>>>>> b943d70b821d05a5ac8df7ce430e8692440da09c
+    Testimonial1Component,
+    CheckoutmComponent
   ]
 })
 export class SharedModule { }
