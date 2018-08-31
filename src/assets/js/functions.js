@@ -1,40 +1,40 @@
-/*------------------------------------
-	Theme Name: Maxshop
-	Start Date : 
-	End Date : 
-	Last change: 
-	Version: 1.0
-	Assigned to:
-	Primary use:
----------------------------------------*/
-/*	
-	- Google Map
+// /*------------------------------------
+// 	Theme Name: Maxshop
+// 	Start Date : 
+// 	End Date : 
+// 	Last change: 
+// 	Version: 1.0
+// 	Assigned to:
+// 	Primary use:
+// ---------------------------------------*/
+// /*	
+// 	- Google Map
 	
-	* Document Scroll		
+// 	* Document Scroll		
 		
-	* Document Ready
-		- Selling Section
-		- Responsive Caret
-		- Google Map
-		- Scrolling Navigation
-		- Add Easing Effect
-		- Search
-		- Rev Slider
-		- Go to Next
-		- Client Carousel
-		- Category Carousel
-		- Collection Carousel
-		- Product Section
-		- Shop Single
-		- CountDown
-		- Price Filter
-		- Quantity
-		- Contact Map
-		- Quick Contact Form
+// 	* Document Ready
+// 		- Selling Section
+// 		- Responsive Caret
+// 		- Google Map
+// 		- Scrolling Navigation
+// 		- Add Easing Effect
+// 		- Search
+// 		- Rev Slider
+// 		- Go to Next
+// 		- Client Carousel
+// 		- Category Carousel
+// 		- Collection Carousel
+// 		- Product Section
+// 		- Shop Single
+// 		- CountDown
+// 		- Price Filter
+// 		- Quantity
+// 		- Contact Map
+// 		- Quick Contact Form
 
-	* Window Load
-		- Site Loader
-*/
+// 	* Window Load
+// 		- Site Loader
+// */
 
 (function($) {
 

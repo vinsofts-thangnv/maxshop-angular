@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare const $: any;
+
 @Component({
   selector: 'app-blogpost',
   templateUrl: './blogpost.component.html',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogpostComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    $.getScript('../../../assets/js/functions.js');
+   }
 
   ngOnInit() {
   }
