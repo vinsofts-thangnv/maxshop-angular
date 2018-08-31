@@ -27,6 +27,10 @@ import { Dealing1Component } from '../blocks/dealing1/dealing1.component';
 import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.component';
 import { ProductSingleComponent } from '../blocks/product-single/product-single.component';
 import { Main404Component } from '../blocks/main404/main404.component';
+import { Blog1homeComponent } from '../blocks/blog1home/blog1home.component';
+import { Selling1Component } from '../blocks/selling1/selling1.component';
+import { Collection1Component } from '../blocks/collection1/collection1.component';
+
 
 @NgModule({
   imports: [
@@ -58,7 +62,10 @@ import { Main404Component } from '../blocks/main404/main404.component';
     Dealing1Component,
     Testimonial1Component,
     Main404Component,
-    ProductSingleComponent
+    ProductSingleComponent,
+    Blog1homeComponent,
+    Selling1Component,
+    Collection1Component
   ],
   exports: [
     HeaderComponent,
@@ -86,7 +93,10 @@ import { Main404Component } from '../blocks/main404/main404.component';
     Testimonial1Component,
     CheckoutmComponent,
     ProductSingleComponent,
-    Main404Component
+    Main404Component,
+    Blog1homeComponent,
+    Selling1Component,
+    Collection1Component
   ]
 })
 export class SharedModule { }
