@@ -25,17 +25,8 @@ import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
 import { Category1Component } from '../blocks/category1/category1.component';
 import { Dealing1Component } from '../blocks/dealing1/dealing1.component';
 import { Testimonial1Component } from '../blocks/testimonial1/testimonial1.component';
-<<<<<<< HEAD
-import { CheckoutmComponent } from '../blocks/checkoutm/checkoutm.component';
-<<<<<<< HEAD
-import { BlogpostComponent } from '../pages/blogpost/blogpost.component';
 import { ProductSingleComponent } from '../blocks/product-single/product-single.component';
-
-=======
-=======
 import { Main404Component } from '../blocks/main404/main404.component';
->>>>>>> 065031f97c676f656c347f4ccbb6dda19bb70340
->>>>>>> 69ccaa08c074649db813fb7dbdeb7a4e5b81f964
 
 @NgModule({
   imports: [
@@ -66,16 +57,8 @@ import { Main404Component } from '../blocks/main404/main404.component';
     Category1Component,
     Dealing1Component,
     Testimonial1Component,
-<<<<<<< HEAD
-    CheckoutmComponent,
-<<<<<<< HEAD
-    BlogpostComponent,
+    Main404Component,
     ProductSingleComponent
-=======
-=======
-    Main404Component
->>>>>>> 065031f97c676f656c347f4ccbb6dda19bb70340
->>>>>>> 69ccaa08c074649db813fb7dbdeb7a4e5b81f964
   ],
   exports: [
     HeaderComponent,
@@ -101,16 +84,9 @@ import { Main404Component } from '../blocks/main404/main404.component';
     Category1Component,
     Dealing1Component,
     Testimonial1Component,
-<<<<<<< HEAD
     CheckoutmComponent,
-<<<<<<< HEAD
-    BlogpostComponent,
-    ProductSingleComponent
-=======
-=======
+    ProductSingleComponent,
     Main404Component
->>>>>>> 065031f97c676f656c347f4ccbb6dda19bb70340
->>>>>>> 69ccaa08c074649db813fb7dbdeb7a4e5b81f964
   ]
 })
 export class SharedModule { }
