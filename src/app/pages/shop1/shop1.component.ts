@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const $: any;
 
 @Component({
   selector: 'app-shop1',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Shop1Component implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    $.getScript('../../../assets/js/functions.js');
+  }
 
   ngOnInit() {
   }
