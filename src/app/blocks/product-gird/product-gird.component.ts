@@ -19,6 +19,6 @@ export class ProductGirdComponent implements OnInit {
   }
 
   getall() {
-    this.productService.getAllProduct().then(resjson => console.log(this.listproduct = resjson));
+    this.productService.getAllProduct().then(resjson => this.listproduct = resjson);
   }
 }

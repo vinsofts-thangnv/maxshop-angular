@@ -1,4 +1,4 @@
-import { Component, OnInit, } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 declare const $: any;
 
@@ -7,14 +7,17 @@ declare const $: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
 
 
   constructor() {
-    $.getScript('../../../assets/js/functions.js');
   }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    $.getScript('../../../assets/js/functions.js');
   }
 }

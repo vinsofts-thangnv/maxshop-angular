@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CategoryService } from '../../services/category/category.service';
-
+declare const $: any;
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -16,7 +16,39 @@ export class CategoryComponent implements OnInit {
   }
   getAll() {
     this.categoryService.getAllCategories()
-      .then(resJson => console.log(this.data_all = resJson))
+      .then((e) => {
+        console.log(e);
+        this.data_all = e;
+
+        setTimeout(() => {
+          if ($(".category-carousel").length) {
+            $(".category-carousel").owlCarousel({
+              loop: true,
+              margin: 0,
+              nav: false,
+              dots: false,
+              autoplay: false,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                600: {
+                  items: 2
+                },
+                768: {
+                  items: 2
+                },
+                1000: {
+                  items: 3
+                },
+                1366: {
+                  items: 4
+                }
+              }
+            });
+          }
+        });
+      })
       .catch(err => console.log(err));
   }
 }
