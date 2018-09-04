@@ -12,10 +12,13 @@ export class ProductGirdComponent implements OnInit {
   listproduct;
 
   constructor(private productService: ProductService) {
-    this.listproduct = this.productService.getAllProduct();
-    console.log(this.listproduct);
   }
 
   ngOnInit() {
+    this.getall();
+  }
+
+  getall() {
+    this.productService.getAllProduct().then(resjson => console.log(this.listproduct = resjson));
   }
 }

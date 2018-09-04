@@ -1,11 +1,11 @@
 <!-- Products -->
 <ul class="products">
     <!-- Product -->
-    <li class="product design">
+    <li *ngFor="let item of listproduct" class="product design">
       <a href="#">
         <img src="../../../assets/images/product-1.jpg" alt="Product" />
-        <h5></h5>
-        <span class="price"><del>$200</del>$139</span>
+        <h5>{{item.name}}</h5>
+        <span class="price"><del>${{item.priceold}}</del>${{item.pricenew}}</span>
       </a>
       <div class="wishlist-box">
         <a href="#"><i class="fa fa-arrows-alt"></i></a>
