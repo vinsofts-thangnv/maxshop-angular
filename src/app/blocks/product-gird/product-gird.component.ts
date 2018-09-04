@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../../services/product/product.service';
 
 @Component({
   selector: 'app-product-gird',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductGirdComponent implements OnInit {
 
-  constructor() { }
+
+  listproduct;
+
+  constructor(private productService: ProductService) {
+    this.listproduct = this.productService.getAllProduct();
+    console.log(this.listproduct);
+  }
 
   ngOnInit() {
   }
-
 }
