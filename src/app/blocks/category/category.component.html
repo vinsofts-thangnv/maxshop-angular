@@ -1,42 +1,13 @@
 <!-- Category Section -->
 <div id="category-section" class="category-section container-fluid no-padding">
   <div class="category-carousel">
-    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-      <div class="category-box layout-1">
+    <div *ngFor="let category of data_all"  class="col-md-12 col-sm-12 col-xs-12 no-padding">
+      <div class="category-box layout-{{data_all.indexOf(category)+1}}">
+
         <img src="../../../assets/images/category-1.jpg" alt="category" />
         <div class="category-content">
-          <p>shop the latest technologies</p>
+          <p>{{ category.name }}</p>
           <h5>save upto 40%</h5>
-          <a href="#" title="Shop Now">Shop Now</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-      <div class="category-box layout-2">
-        <img src="../../../assets/images/category-2.jpg" alt="category" />
-        <div class="category-content">
-          <p>New arrivals</p>
-          <h5>15 stylish bags here save upto 25%</h5>
-          <a href="#" title="Shop Now">Shop Now</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-      <div class="category-box layout-3">
-        <img src="../../../assets/images/category-3.jpg" alt="category" />
-        <div class="category-content">
-          <p>special offers for men's</p>
-          <h5>save upto 60%</h5>
-          <a href="#" title="Shop Now">Shop Now</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-      <div class="category-box layout-3 layout-4">
-        <img src="../../../assets/images/category-4.jpg" alt="category" />
-        <div class="category-content">
-          <p>new homemade Products</p>
-          <h5>big offers On</h5>
           <a href="#" title="Shop Now">Shop Now</a>
         </div>
       </div>
