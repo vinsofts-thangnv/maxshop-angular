@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { SlideService } from '../../services/slide/slide.service';
 
 @Component({
   selector: 'app-slider',
@@ -7,9 +8,16 @@ import { Component, OnInit} from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
-  constructor() {
+  listSlide;
+
+  constructor(private slideService: SlideService) {
   }
 
   ngOnInit() {
+    this.getallslide();
+  }
+
+  getallslide(){
+    this.slideService.getAllSlide().then(resjson => this.listSlide = resjson);
   }
 }
