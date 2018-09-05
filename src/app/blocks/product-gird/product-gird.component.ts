@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ProductService } from '../../services/product/product.service';
 
 @Component({
@@ -8,17 +8,22 @@ import { ProductService } from '../../services/product/product.service';
 })
 export class ProductGirdComponent implements OnInit {
 
+  @Input() numberpage: number;
 
   listproduct;
 
   constructor(private productService: ProductService) {
   }
 
-  ngOnInit() {
-    this.getall();
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnChanges(changes: SimpleChanges) {
+    this.getPageProduct();
   }
 
-  getall() {
-    this.productService.getAllProduct().then(resjson => this.listproduct = resjson);
+  ngOnInit() {
+  }
+
+  getPageProduct() {
+    this.productService.getPageProduct(this.numberpage).then(resjson => this.listproduct = resjson);
   }
 }

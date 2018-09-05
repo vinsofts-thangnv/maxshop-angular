@@ -13,4 +13,10 @@ export class ProductService {
     // tslint:disable-next-line:max-line-length
     return this.http.get('http://192.168.1.23/maxshop/maxshop/public/index.php/api/products').toPromise().then(res => res.json()).then(resjson => resjson.data.data);
   }
+
+  getPageProduct(numberpage: number): any {
+    // tslint:disable-next-line:max-line-length
+    return this.http.get('http://192.168.1.23/maxshop/maxshop/public/index.php/api/products?page=' + numberpage).toPromise().then(res => res.json()).then(resjson => resjson.data.data);
+  }
+
 }
