@@ -27,14 +27,14 @@
             <button class="btn btn-search" title="Search" type="button"><i class="icon icon-Search"></i></button>
           </span>
         </div>
-        <app-product-gird></app-product-gird>
+        <app-product-gird numberpage={{numberpage}}></app-product-gird>
       </div><!-- Row /- -->
       <nav class="ow-pagination">
         <ul class="pager">
-          <li class="number"><a href="#">4</a></li>
-          <li class="load-more"><a href="#">Load More</a></li>
-          <li class="previous"><a href="#"><i class="fa fa-angle-right"></i></a></li>
-          <li class="next"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+          <li class="number"><a>{{numberpage}}</a></li>
+          <li class="load-more"><a>Load More</a></li>
+          <li class="previous"><a ><i class="fa fa-angle-right" (click)="nextpage()"></i></a></li>
+          <li class="next"><a><i class="fa fa-angle-left" (click)="backpage()"></i></a></li>
         </ul>
       </nav>
     </div><!-- Container /- -->

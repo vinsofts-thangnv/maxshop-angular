@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
+  numberpage = 1;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  nextpage() {
+    this.numberpage = this.numberpage + 1;
+  }
+  backpage() {
+    this.numberpage = this.numberpage - 1;
+  }
 }
