@@ -48,8 +48,8 @@
         </div><!-- Menu Icon /- -->
         <div class="navbar-collapse collapse navbar-right" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active dropdown">
-              <a routerLink="/home" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+            <li class=" {{(urlActive==='/home'||urlActive==='/home1')? 'active':''}} dropdown">
+              <a routerLink="/home" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" [pageScrollDuration]="500" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
               <i class="ddl-switch fa fa-angle-down"></i>
               <ul class="dropdown-menu">				
                 <li><a routerLink="/home1" title="home 1">home 1</a></li>
@@ -66,21 +66,21 @@
             </li>
             <li><a href="#product-section" title="Products">Products</a></li>
             <li class="dropdown">
-              <a routerLink="/shop" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Shop" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <a routerLink="/shop" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Shop" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
               <i class="ddl-switch fa fa-angle-down"></i>
               <ul class="dropdown-menu">				
-                <li><a routerLink="/shop1" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Shop Single">Shop Single</a></li>
+                <li><a routerLink="/shop1" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Shop Single">Shop Single</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a routerLink="/blog" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+              <a routerLink="/blog" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
               <i class="ddl-switch fa fa-angle-down"></i>
               <ul class="dropdown-menu">				
-                <li><a routerLink="/blogpost" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Blog Post">Blog Post</a></li>
+                <li><a routerLink="/blogpost" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Blog Post">Blog Post</a></li>
               </ul>
             </li>
-            <li><a routerLink="/about" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="About Us">About Us</a></li>
-            <li><a routerLink="/contact" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Contact Us">Contact Us</a></li>
+            <li><a routerLink="/about" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="About Us">About Us</a></li>
+            <li><a routerLink="/contact" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Contact Us">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </nav><!-- nav /- -->

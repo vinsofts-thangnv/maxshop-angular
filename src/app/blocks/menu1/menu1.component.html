@@ -25,14 +25,16 @@
             <li class="mini_cart_item">
               <a title="Remove this item" class="remove" href="#">&#215;</a>
               <a href="#" class="shop-thumbnail">
-                <img alt="poster_2_up" class="attachment-shop_thumbnail" src="../../../assets/images/product-wishlist-1.jpg">Flying Ninja
+                <img alt="poster_2_up" class="attachment-shop_thumbnail" src="../../../assets/images/product-wishlist-1.jpg">Flying
+                Ninja
               </a>
               <span class="quantity">2 &#215; <span class="amount">Rs.12.00</span></span>
             </li>
             <li class="mini_cart_item">
               <a title="Remove this item" class="remove" href="#">&#215;</a>
               <a href="#" class="shop-thumbnail">
-                <img alt="poster_2_up" class="attachment-shop_thumbnail" src="../../../assets/images/product-wishlist-2.jpg">Flying Ninja
+                <img alt="poster_2_up" class="attachment-shop_thumbnail" src="../../../assets/images/product-wishlist-2.jpg">Flying
+                Ninja
               </a>
               <span class="quantity">2 &#215; <span class="amount">Rs.12.00</span></span>
             </li>
@@ -67,40 +69,44 @@
       </div>
       <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a routerLink="/home" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+          <li class=" {{(urlActive==='/home'||urlActive==='/home1')? 'active':''}} dropdown">
+            <a routerLink="/home" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true"
+              aria-expanded="false">Home</a>
             <i class="ddl-switch fa fa-angle-down"></i>
             <ul class="dropdown-menu">
-              <li><a routerLink="/home1" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="home 1">home 1</a></li>
+              <li><a routerLink="/home1" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="home 1">home 1</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#" title="Home" ngx-scroll-to [ngx-scroll-to-offset]="-10000" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Categories
-              </a>
+          <li class=" {{(urlActive==='/cart'||urlActive==='/checkout'||urlActive==='/404')? 'active':''}} dropdown">
+            <a class="dropdown-toggle" role="button" aria-haspopup="true"
+              aria-expanded="false">Categories
+            </a>
             <i class="ddl-switch fa fa-angle-down"></i>
             <ul class="dropdown-menu">
-              <li><a routerLink="/cart" title="Cart">Cart</a></li>
-              <li><a routerLink="/checkout" title="Checkout">Checkout</a></li>
-              <li><a routerLink="/404" title="404">404</a></li>
+              <li><a routerLink="/cart" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Cart">Cart</a></li>
+              <li><a routerLink="/checkout" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Checkout">Checkout</a></li>
+              <li><a routerLink="/404" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="404">404</a></li>
             </ul>
           </li>
-          <li><a href="#product-section" title="Products">Products</a></li>
-          <li class="active dropdown">
-            <a routerLink="/shop" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Shop" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <li><a routerLink="/home" pageScroll [pageScrollOffset]="0" href="#product-section" title="Products">Products</a></li>
+          <li class=" {{urlActive==='/shop'? 'active':''}} dropdown">
+            <a routerLink="/shop" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Shop" class="dropdown-toggle" role="button" aria-haspopup="true"
+              aria-expanded="false">Shop</a>
             <i class="ddl-switch fa fa-angle-down"></i>
             <ul class="dropdown-menu">
-              <li><a routerLink="/shop1" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Shop Single">Shop Single</a></li>
+              <li><a routerLink="/shop1" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Shop Single">Shop Single</a></li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a routerLink="/blog" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+          <li class=" {{(urlActive==='/blog'||urlActive==='/blog1')? 'active':''}} dropdown">
+            <a routerLink="/blog" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true"
+              aria-expanded="false">Blog</a>
             <i class="ddl-switch fa fa-angle-down"></i>
             <ul class="dropdown-menu">
-              <li><a routerLink="/blogpost" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Blog Post">Blog Post</a></li>
+              <li><a routerLink="/blogpost" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Blog Post">Blog Post</a></li>
             </ul>
           </li>
-          <li><a routerLink="/about" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="About Us">About Us</a></li>
-          <li><a routerLink="/contact" ngx-scroll-to [ngx-scroll-to-offset]="-10000" title="Contact Us">Contact Us</a></li>
+          <li class=" {{urlActive==='/about'? 'active':''}}"><a routerLink="/about" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="About Us">About Us</a></li>
+          <li class=" {{urlActive==='/contact'? 'active':''}}"><a routerLink="/contact" pageScroll [pageScrollOffset]="0" href="#header-page" [pageScrollDuration]="500" title="Contact Us">Contact Us</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->

@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SlideService } from '../../services/slide/slide.service';
 
 @Component({
@@ -17,7 +17,7 @@ export class SliderComponent implements OnInit {
     this.getallslide();
   }
 
-  getallslide(){
+  getallslide() {
     this.slideService.getAllSlide().then(resjson => this.listSlide = resjson);
   }
 }

@@ -31,12 +31,14 @@ import { Blog1homeComponent } from '../blocks/blog1home/blog1home.component';
 import { Selling1Component } from '../blocks/selling1/selling1.component';
 import { Collection1Component } from '../blocks/collection1/collection1.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    NgxPageScrollModule
   ],
   declarations: [
     HeaderComponent,
