@@ -18,6 +18,8 @@ export class ProductComponent implements OnInit {
     this.numberpage = this.numberpage + 1;
   }
   backpage() {
-    this.numberpage = this.numberpage - 1;
+    if (this.numberpage > 1) {
+      this.numberpage = this.numberpage - 1;
+    }
   }
 }
