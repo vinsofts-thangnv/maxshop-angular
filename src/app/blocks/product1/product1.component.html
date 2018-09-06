@@ -113,8 +113,8 @@
         <ul class="pager">
           <li class="number"><a>{{numberpage}}</a></li>
           <li class="load-more"><a >Load More</a></li>
-          <li class="previous"><a ><i class="fa fa-angle-right" (click)="nextpage()"></i></a></li>
-          <li class="next"><a><i class="fa fa-angle-left" (click)="backpage()"></i></a></li>
+          <li class="previous"><a ><i class="fa fa-angle-right" pageScroll [pageScrollOffset]="0" href="#product" [pageScrollDuration]="400" (click)="nextpage()"></i></a></li>
+          <li class="next"><a><i class="fa fa-angle-left" pageScroll [pageScrollOffset]="0" href="#product" [pageScrollDuration]="400" (click)="backpage()"></i></a></li>
         </ul>
       </nav>
     </div><!-- Container /- -->

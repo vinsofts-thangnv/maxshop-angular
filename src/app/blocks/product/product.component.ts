@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../../services/product/product.service';
 
 @Component({
   selector: 'app-product',
@@ -9,9 +10,12 @@ export class ProductComponent implements OnInit {
 
   numberpage = 1;
 
-  constructor() { }
+  count;
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
+
   }
 
   nextpage() {

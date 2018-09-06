@@ -17,7 +17,6 @@ export class CategoryComponent implements OnInit {
   getAll() {
     this.categoryService.getAllCategories()
       .then((e) => {
-        console.log(e);
         this.data_all = e;
 
         setTimeout(() => {
