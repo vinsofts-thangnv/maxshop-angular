@@ -18,6 +18,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // $.getScript('../../../assets/js/functions.js');
+    $.getScript('../../../assets/js/functions.js');
   }
 }

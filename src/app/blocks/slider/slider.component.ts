@@ -21,9 +21,10 @@ export class SliderComponent implements OnInit, AfterViewInit {
 
   getallslide() {
     this.slideService.getAllSlide().then(resjson => this.listSlide = resjson);
+    // $.getScript('../../../assets/js/functions.js');
   }
 
   ngAfterViewInit() {
-    $.getScript('../../../assets/js/functions.js');
+    // $.getScript('../../../assets/js/functions.js');
   }
 }
