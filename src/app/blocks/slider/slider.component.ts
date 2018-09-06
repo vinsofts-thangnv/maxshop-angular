@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { SlideService } from '../../services/slide/slide.service';
+
+declare const $: any;
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
-export class SliderComponent implements OnInit {
+export class SliderComponent implements OnInit, AfterViewInit {
 
   listSlide;
 
@@ -19,5 +21,9 @@ export class SliderComponent implements OnInit {
 
   getallslide() {
     this.slideService.getAllSlide().then(resjson => this.listSlide = resjson);
+  }
+
+  ngAfterViewInit() {
+    $.getScript('../../../assets/js/functions.js');
   }
 }
